@@ -7,13 +7,14 @@ const ingredients = [
   'Condiments',
 ];
 
-const elements = document.querySelector("#ingredients");
-console.log(elements)
+const ul = document.querySelector("#ingredients");
+console.log(ul)
 ingredients.forEach((ingredient) => {
   const li = document.createElement('li');
   li.textContent = ingredient;
   li.classList.add('item');
-  elements.append(li)
+  ul.append(li)//Після чого, вставить усі <li> за одну 
+  //операцію у список ul#ingredients    ???
 })
   
 
