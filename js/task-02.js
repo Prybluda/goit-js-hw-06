@@ -8,14 +8,13 @@ const ingredients = [
 ];
 
 const ul = document.querySelector("#ingredients");
-console.log(ul)
-ingredients.forEach((ingredient) => {
+
+const listLi = ingredients.map((ingredient) => {
   const li = document.createElement('li');
   li.textContent = ingredient;
   li.classList.add('item');
-  ul.append(li)//Після чого, вставить усі <li> за одну 
-  //операцію у список ul#ingredients    ???
-})
-  
+  return li;
+});
+ul.append(...listLi); 
 
 

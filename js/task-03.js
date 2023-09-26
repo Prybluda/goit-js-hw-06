@@ -15,12 +15,13 @@ const images = [
 
 
 const ul = document.querySelector(".gallery");
-console.log(ul)
+
 const img = images.map((image) => {
   const li = `
   <li>
   <img  src = ${image.url} alt = '${image.alt}' width = 600 />
   </li>`
-  ul.insertAdjacentHTML("afterbegin", li)
+  return li;
 });
+ul.insertAdjacentHTML("afterbegin", img)
 ul.style.display = "flex";
