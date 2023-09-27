@@ -23,4 +23,4 @@ const img = images.map(({url, alt}) =>
 
 ul.insertAdjacentHTML('afterbegin', img)
 ul.style.display ='flex';
-
+ul.style.listStyleType = 'none';
