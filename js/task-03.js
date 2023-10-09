@@ -18,9 +18,10 @@ const ul = document.querySelector(".gallery");
 
 const img = images.map(({url, alt}) => 
 ` <li>
-  <img class ='list' src = ${url} alt = '${alt}' width = 600 />
+  <img class ="list" src ="${url}" alt = "${alt}" width = "600" />
   </li>`).join('');
 
 ul.insertAdjacentHTML('afterbegin', img)
 ul.style.display ='flex';
 ul.style.listStyleType = 'none';
+
